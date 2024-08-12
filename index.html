@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Aplicación de seguimiento de gastos</title>
+</head>
+<body>
+    <h1>Aplicación de seguimiento de gastos</h1>
+    <div class="input-section">
+        <label for="category-select">Categoría:</label>
+        <select id="category-select">
+            <option value="Comida y Bebida">Comida y Bebida</option>
+            <option value="Alquiler">Alquiler</option>
+            <option value="Transporte">Transporte</option>
+            <option value="Chill">Chill</option>
+        </select>
+        <label for="amount-input">Cantidad:</label>
+        <input type="number" id="amount-input">
+        <label for="date-input">Fecha:</label>
+        <input type="date" id="date-input">
+        <button id="add-btn">Agregar</button>
+    </div>
+    <div class="expenses-list">
+        <h2>Lista de gastos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Categoría</th>
+                    <th>Cantidad</th>
+                    <th>Fecha</th>
+                    <th>Eliminar</th>
+                </tr>
+            </thead>
+            <tbody id="expnese-table-body">
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total:</td>
+                    <td id="total-amount"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
